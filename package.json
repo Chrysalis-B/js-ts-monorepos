@@ -9,10 +9,16 @@
   "workspaces": [
     "packages/*"
   ],
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 0"
-  },
-  "volta": {
+"scripts": {
+   "build": "scripty",
+   "test": "scripty",
+   "lint": "scripty",
+   "clean": "scripty"
+ },
+ "scripty": {
+   "path": "./scripts/workspace"
+ },
+ "volta": {
     "node": "16.14.2",
     "yarn": "1.22.18"
   },
@@ -21,6 +27,7 @@
     "@typescript-eslint/parser": "5.45.0",
     "eslint": "8.29.0",
     "lerna": "6.1.0",
-    "rimraf": "3.0.2"
+    "rimraf": "3.0.2",
+    "scripty": "2.1.1"
   }
 }

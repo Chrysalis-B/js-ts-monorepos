@@ -7,10 +7,13 @@
     "access": "public"
   },
   "scripts": {
-    "lint": "eslint src --ext js,ts",
-    "clean": "rimraf dist *.tsbuildinfo",
-    "test": "jest", 
-    "build": "tsc -b ."
+   "lint": "scripty",
+   "clean": "rimraf dist *.tsbuildinfo",
+   "build": "scripty",
+   "test": "scripty"
+  },
+  "scripty": {
+    "path": "../../scripts/packages"
   },
   "dependencies": {
     "date-fns": "2.29.3",
