@@ -1,16 +1,16 @@
 {
   "name": "@shlack/utils",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "publishConfig": {
     "access": "public"
   },
   "scripts": {
-   "lint": "scripty",
-   "clean": "rimraf dist *.tsbuildinfo",
-   "build": "scripty",
-   "test": "scripty"
+    "lint": "scripty",
+    "clean": "rimraf dist *.tsbuildinfo",
+    "build": "scripty",
+    "test": "scripty"
   },
   "scripty": {
     "path": "../../scripts/packages"
