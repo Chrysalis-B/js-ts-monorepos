@@ -23,29 +23,7 @@ const App: React.FunctionComponent = () => {
   });
   if (!teams) return <Loading message="Loading teams" />;
   return (
-    <Router>
-      <div className="flex flex-col sm:flex-row w-full h-full">
-        <TeamSelector teams={teams} />
-        <Switch>
-          <Route exact path="/">
-            <section className="m-12 text-xl">
-              <h3>Please select a team</h3>
-            </section>
-          </Route>
-          <Route exact path="/team">
-            <section className="m-12 text-xl">
-              <h3>Please select a team</h3>
-            </section>
-          </Route>
-          <Route
-            path="/team/:teamId"
-            children={({ match }: { match: match<{ teamId: string }> }) => (
-              <SelectedTeam match={match} teams={teams} />
-            )}
-          />
-        </Switch>
-      </div>
-    </Router>
+    null
   );
 };
 export default App;
