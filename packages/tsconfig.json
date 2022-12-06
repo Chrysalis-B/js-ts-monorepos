@@ -3,7 +3,6 @@
   "references": [
     { "path": "utils" },
     { "path": "types" },
-    { "path": "ui" },
     { "path": "data" },
   ]
 }
